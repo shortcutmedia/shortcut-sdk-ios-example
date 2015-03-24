@@ -20,15 +20,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     [SCMSDKConfig sharedConfig].accessKey = @"YOUR_ACCESS_KEY";
-    [SCMSDKConfig sharedConfig].secretKey = @"YOUR_SECRET_KEY";
-    
+    [SCMSDKConfig sharedConfig].secretToken = @"YOUR_SECRET_TOKEN";
+
     SCMScannerViewController *scannerViewController = [[SCMScannerViewController alloc] init];
     scannerViewController.delegate = self;
-    
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = scannerViewController;
     [self.window makeKeyAndVisible];
-    
+
     return YES;
 }
 
@@ -58,7 +58,7 @@
 {
     SCMQueryResult *result = [response.results firstObject];
     SCMItemViewController *itemViewController = [[SCMQueryResultViewController alloc] initWithQueryResult:result];
-    
+
     self.window.rootViewController = itemViewController;
 }
 
