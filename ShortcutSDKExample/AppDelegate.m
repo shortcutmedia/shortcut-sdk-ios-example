@@ -19,8 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    [SCMSDKConfig sharedConfig].accessKey = @"677795eb-4fba-4797-963d-2e455f7d08f6";
-    [SCMSDKConfig sharedConfig].secretToken = @"4NoTXkiaw4mLze0irkTuIg0KDj7D73er6v4lTvEm";
+    [SCMSDKConfig sharedConfig].accessKey = @"YOUR_ACCESS_KEY";
+    [SCMSDKConfig sharedConfig].secretToken = @"YOUR_SECRET_TOKEN";
 
     SCMScannerViewController *scannerViewController = [[SCMScannerViewController alloc] init];
     scannerViewController.delegate = self;
