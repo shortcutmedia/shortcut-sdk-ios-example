@@ -1,3 +1,6 @@
 .DS_Store
 ShortcutSDKExample.xcodeproj/project.xcworkspace/xcuserdata
 ShortcutSDKExample.xcodeproj/xcuserdata
+
+build/*
+
