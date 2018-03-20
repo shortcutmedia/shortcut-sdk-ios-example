@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8684B98A206152D1008CF111 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8684B989206152D1008CF111 /* libiconv.tbd */; };
+		8684B98C206152DA008CF111 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8684B98B206152DA008CF111 /* libc++.tbd */; };
 		86F5C31A1A851A7500100B23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F5C3191A851A7500100B23 /* main.m */; };
 		86F5C31D1A851A7500100B23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F5C31C1A851A7500100B23 /* AppDelegate.m */; };
 		86F5C3201A851A7500100B23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F5C31F1A851A7500100B23 /* ViewController.m */; };
@@ -16,8 +18,6 @@
 		86F5C3341A851A7500100B23 /* ShortcutSDKExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F5C3331A851A7500100B23 /* ShortcutSDKExampleTests.m */; };
 		86F5C33F1A851ACF00100B23 /* ShortcutSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86F5C33D1A851ACF00100B23 /* ShortcutSDK.bundle */; };
 		86F5C3401A851ACF00100B23 /* ShortcutSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F5C33E1A851ACF00100B23 /* ShortcutSDK.framework */; };
-		86F5C3421A851AE500100B23 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F5C3411A851AE500100B23 /* libc++.dylib */; };
-		86F5C3441A851AEF00100B23 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F5C3431A851AEF00100B23 /* libiconv.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8684B989206152D1008CF111 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		8684B98B206152DA008CF111 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		86F5C3141A851A7500100B23 /* ShortcutSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortcutSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F5C3181A851A7500100B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86F5C3191A851A7500100B23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,8 +48,6 @@
 		86F5C3331A851A7500100B23 /* ShortcutSDKExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortcutSDKExampleTests.m; sourceTree = "<group>"; };
 		86F5C33D1A851ACF00100B23 /* ShortcutSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShortcutSDK.bundle; sourceTree = "<group>"; };
 		86F5C33E1A851ACF00100B23 /* ShortcutSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShortcutSDK.framework; sourceTree = "<group>"; };
-		86F5C3411A851AE500100B23 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		86F5C3431A851AEF00100B23 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86F5C3441A851AEF00100B23 /* libiconv.dylib in Frameworks */,
-				86F5C3421A851AE500100B23 /* libc++.dylib in Frameworks */,
+				8684B98C206152DA008CF111 /* libc++.tbd in Frameworks */,
+				8684B98A206152D1008CF111 /* libiconv.tbd in Frameworks */,
 				86F5C3401A851ACF00100B23 /* ShortcutSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,16 +71,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8684B988206152D1008CF111 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8684B98B206152DA008CF111 /* libc++.tbd */,
+				8684B989206152D1008CF111 /* libiconv.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		86F5C30B1A851A7500100B23 = {
 			isa = PBXGroup;
 			children = (
-				86F5C3431A851AEF00100B23 /* libiconv.dylib */,
-				86F5C3411A851AE500100B23 /* libc++.dylib */,
 				86F5C33D1A851ACF00100B23 /* ShortcutSDK.bundle */,
 				86F5C33E1A851ACF00100B23 /* ShortcutSDK.framework */,
 				86F5C3161A851A7500100B23 /* ShortcutSDKExample */,
 				86F5C3301A851A7500100B23 /* ShortcutSDKExampleTests */,
 				86F5C3151A851A7500100B23 /* Products */,
+				8684B988206152D1008CF111 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,7 +186,7 @@
 		86F5C30C1A851A7500100B23 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Shortcut Media AG";
 				TargetAttributes = {
 					86F5C3131A851A7500100B23 = {
@@ -287,20 +295,30 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -328,13 +346,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -342,6 +368,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -399,6 +426,7 @@
 				);
 				INFOPLIST_FILE = ShortcutSDKExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shortcutmedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShortcutSDKExample.app/ShortcutSDKExample";
 			};
@@ -414,6 +442,7 @@
 				);
 				INFOPLIST_FILE = ShortcutSDKExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shortcutmedia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShortcutSDKExample.app/ShortcutSDKExample";
 			};
@@ -438,6 +467,7 @@
 				86F5C3391A851A7500100B23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86F5C33A1A851A7500100B23 /* Build configuration list for PBXNativeTarget "ShortcutSDKExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +476,7 @@
 				86F5C33C1A851A7500100B23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
