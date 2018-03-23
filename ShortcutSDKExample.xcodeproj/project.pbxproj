@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8639646520651C8E00EB57E9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D4DC792064FD53007F2662 /* WebKit.framework */; };
 		8684B98A206152D1008CF111 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8684B989206152D1008CF111 /* libiconv.tbd */; };
 		8684B98C206152DA008CF111 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8684B98B206152DA008CF111 /* libc++.tbd */; };
 		86F5C31A1A851A7500100B23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F5C3191A851A7500100B23 /* main.m */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		8684B989206152D1008CF111 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		8684B98B206152DA008CF111 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		86D4DC792064FD53007F2662 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		86F5C3141A851A7500100B23 /* ShortcutSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortcutSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F5C3181A851A7500100B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86F5C3191A851A7500100B23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8639646520651C8E00EB57E9 /* WebKit.framework in Frameworks */,
 				8684B98C206152DA008CF111 /* libc++.tbd in Frameworks */,
 				8684B98A206152D1008CF111 /* libiconv.tbd in Frameworks */,
 				86F5C3401A851ACF00100B23 /* ShortcutSDK.framework in Frameworks */,
@@ -74,6 +77,7 @@
 		8684B988206152D1008CF111 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				86D4DC792064FD53007F2662 /* WebKit.framework */,
 				8684B98B206152DA008CF111 /* libc++.tbd */,
 				8684B989206152D1008CF111 /* libiconv.tbd */,
 			);
@@ -391,6 +395,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ShortcutSDKExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shortcutmedia.$(PRODUCT_NAME:rfc1034identifier)";
@@ -407,6 +412,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ShortcutSDKExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shortcutmedia.$(PRODUCT_NAME:rfc1034identifier)";
