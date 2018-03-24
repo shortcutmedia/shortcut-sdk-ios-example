@@ -56,6 +56,7 @@
 
 - (void)scannerViewController:(SCMScannerViewController *)scannerViewController recognizedQuery:(SCMQueryResponse *)response atLocation:(CLLocation *)location fromImage:(NSData *)imageData
 {
+    // Picks the first result. Handle multiple results accordingly.
     SCMQueryResult *result = [response.results firstObject];
     SCMItemViewController *itemViewController = [[SCMQueryResultViewController alloc] initWithQueryResult:result];
 
