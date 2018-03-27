@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61B6B044206AF430008E51C3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 61B6B043206AF430008E51C3 /* README.md */; };
 		8639646520651C8E00EB57E9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D4DC792064FD53007F2662 /* WebKit.framework */; };
 		8684B98A206152D1008CF111 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8684B989206152D1008CF111 /* libiconv.tbd */; };
 		8684B98C206152DA008CF111 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8684B98B206152DA008CF111 /* libc++.tbd */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61B6B043206AF430008E51C3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8684B989206152D1008CF111 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		8684B98B206152DA008CF111 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		86D4DC792064FD53007F2662 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -87,6 +89,7 @@
 		86F5C30B1A851A7500100B23 = {
 			isa = PBXGroup;
 			children = (
+				61B6B043206AF430008E51C3 /* README.md */,
 				86F5C33D1A851ACF00100B23 /* ShortcutSDK.bundle */,
 				86F5C33E1A851ACF00100B23 /* ShortcutSDK.framework */,
 				86F5C3161A851A7500100B23 /* ShortcutSDKExample */,
@@ -228,6 +231,7 @@
 			files = (
 				86F5C33F1A851ACF00100B23 /* ShortcutSDK.bundle in Resources */,
 				86F5C3231A851A7500100B23 /* Main.storyboard in Resources */,
+				61B6B044206AF430008E51C3 /* README.md in Resources */,
 				86F5C3281A851A7500100B23 /* LaunchScreen.xib in Resources */,
 				86F5C3251A851A7500100B23 /* Images.xcassets in Resources */,
 			);
