@@ -2,14 +2,12 @@
 //  ViewController.h
 //  ShortcutSDKExample
 //
-//  Created by Severin Schoepke on 06/02/15.
-//  Copyright (c) 2015 Shortcut Media AG. All rights reserved.
+//  Created by Vladislav Jevremovic on 11/19/18.
+//  Copyright (c) 2018 Shortcut Media AG. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
 
-
 @end
-
